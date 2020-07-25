@@ -7,6 +7,9 @@ services:
     network_mode: host
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --web.listen-address=:9091  
     
   grafana:
     image: grafana/grafana

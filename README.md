@@ -8,7 +8,7 @@ The goal of this project is to create an instance of [Prometheus](https://promet
 The project was designed to monitoring the application locally during development. No type of configuration or optimization was done in this setup.
 
 ## Prerequisite
-Run a Springboot application locally that exposes your metrics at http://localhost:8080/metrics.
+Run a Springboot application locally that exposes your metrics at http://localhost:8080/metrics or http://localhost:9090/metrics.
 
 If your applications runs on another port you need to adjust this configuration in [this configuration file](prometheus/prometheus.yml).
 
