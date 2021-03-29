@@ -25,3 +25,15 @@ docker-compose up -d
 Go to http://localhost:3000 to access Grafana and click on the dashboard JVM Micrometer. The dashboard below will be displayed. Thanks to [Michael Weirauch](https://github.com/mweirauch) for the [Grafana dashboard](https://grafana.com/grafana/dashboards/4701)
 
 ![dashboard](dashboard.png)
+
+## Micrometer Example
+
+If you don't have an micrometer project but want test this you can use [this example project](https://github.com/robsonbittencourt/prometheus-micrometer-example).
+
+```
+docker run \
+    -p 8080:8080 \
+    -p 9090:9090 \
+    --name prometheus-micrometer-example \
+    robsonbittencourt/prometheus-micrometer-example
+```    
